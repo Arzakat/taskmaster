@@ -14,3 +14,8 @@
 
 ¿Qué harías diferente si tuvieras que automatizar otro proyecto?
 -Aprendería a utilizar mejor los perfiles desde el inicio del proyecto, también configuraría plugins específicos para lo que vamos a necesitar e implementaría CI/CD desde el comienzo.
+
+Grupo 1:
+Gabriela López
+Camilo Cáceres
+Jenny Morgan
