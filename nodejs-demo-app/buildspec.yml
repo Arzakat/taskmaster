@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+ install:
+ runtime-versions:
+ nodejs: 14
+ commands:
+ - npm install
+ build:
+ commands:
+ - echo "Ejecutando build de la app..."
+ - npm test
+artifacts:
+ files:
+ - '**/*'
