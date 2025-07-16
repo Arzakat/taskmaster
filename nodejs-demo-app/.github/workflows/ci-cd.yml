@@ -1,0 +1,23 @@
+name: CI/CD para Node.js
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v3
+    - name: Instalar Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+    - name: Instalar dependencias
+      run: npm install
+    - name: Ejecutar pruebas
+      run: npm test
+    - name: Simular despliegue
+      run: |
+        echo "Desplegando app..."
+        echo "Simulación de CodeDeploy: node app.js en EC2"
+        echo "✅ Despliegue exitoso"
